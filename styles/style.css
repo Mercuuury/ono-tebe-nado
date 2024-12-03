@@ -66,7 +66,7 @@
 }
 
 .address {
-  width: 240px;
+  max-width: 240px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -76,8 +76,7 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -144,8 +143,8 @@
 }
 
 .bet-button {
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   border: 1px solid currentColor;
   color: #fff;
   font-family: Raleway, sans-serif;
@@ -186,6 +185,7 @@
 .lots__card-list-item {
   flex: 1 1 334px;
   text-decoration: none;
+  min-height: 570px;
 }
 
 .lots__look-more-link {
